@@ -1,27 +1,14 @@
 import * as React from 'react';
-import '../app.scss';
 
-import { render } from 'enzyme';
+import { shallow } from 'enzyme';
 
-import App from '../index';
-
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
-import updateState from '../../../reducers/index';
+import App from '..';
 
 describe('The <App /> Component', () => {
 
   it('renders correctly', () => {
-    const store = createStore(updateState);
+    const wrapper = shallow(<App />);
 
-    const wrapper = render(
-      <Provider store={store}>
-        <App />
-      </Provider>,
-    );
-
-    expect(wrapper.find('#app').children().length).toEqual(2);
-    expect(wrapper.find('#greeting-text').text()).toEqual('Sample-text');
-    expect(wrapper.find('#increment-value').text()).toEqual('0');
+    expect(wrapper.find('#app')).toHaveLength(1);
   });
 });

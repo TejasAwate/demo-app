@@ -1,4 +1,4 @@
-/*import * as React from 'react';
+import * as React from 'react';
 
 import { mount, render } from 'enzyme';
 
@@ -19,4 +19,3 @@ describe('The <Greeting /> Component', () => {
     expect(wrapper.find('#greeting-text').text()).toEqual('Tejas');
   });
 });
-*/
