@@ -8,9 +8,8 @@ Go into project folder: cd demo-app
 
 To install all dependancies: npm install
 
-To run the app: npm run start
+To run the app: npm start
 
-To run unit tests: npm run test
+To run unit tests: npm test
 
-To build: npm run build
 
