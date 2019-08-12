@@ -1,0 +1,32 @@
+.increment-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+  padding: 10px;
+  margin:10px;
+  background-color: lightblue;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+}
+
+.btn {
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  padding: 14px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+.success {
+  background-color: #4CAF50;
+
+  &:hover {
+    background-color: #46a049;
+  }
+} /* Green */
+
+.increment-value {
+  border: 1px solid gray;
+}
